@@ -4,200 +4,217 @@ body{
     padding: 0;
 }
 
-
-.header{
-    background-color: white;
-    
-    
+header{
+    padding: 20px 100px;
+    background: white;
 }
-.header ul
-        {
-            
-            list-style-type: none;
-            margin:0;
-            padding: 4px;
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            border-radius: 2px;
-            box-sizing: 100%;
-            padding-left: 500px;
-            
-        }
 
-        
-       .header ol{
-        float: left ;
-        padding: 20px;
-       
-       
-       }
-
-    header ul a{
-
-            text-decoration: none;
-            text-transform: capitalize;
-            color: black;
-            font-family: sans-serif;
-            font-size: 16px;
-       
-    }
-    header ul a:before
-        {
-            content: "";
-            width: 0;
-            height: 2px;
-            background: blue;
-            display: flex;
-            border-radius: 20%;
-            top: 25px;
-            position: relative;
-            transition: 0.6s ease-in;
-        
-    }
- 
-     header ul a:hover:before {
-        width: 100%;
-    }
-    .icon{
-        height: 50px;
-        width: 100px;
-        
-        position: absolute;
-        left: 300px;
-        top: 12px;
-    }
-
-    .btn{
-        position: absolute;
-        right: 450px;
-        top: 12px;
-         color: #570bd1;
-        border-radius: 20px;
-        padding: 14px 21px;
-        background-color: #ffD8D8;
-        border-color: #FFD8DB;
-        cursor: pointer;
-       
-    }
-    .btn2{
-        border-radius: 20px;
-        background-color: #5243C0;
-        padding: 14px 21px;
-        color: #ffffff;
-        cursor: pointer;
-        
-    }
-    .cnt{
-       padding: 50px 350px;
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-    .logo{
-        position: relative;
-        left: 50px;
-        top: 20px;
-        cursor: pointer;
-    }
+.logo{
+    color: #ffd800;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+    height: 50px;
+}
+.navbar .navigation{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.navigation .nav-items{
+    display: flex;
+    flex-direction: row;
+}
+.navbar .navigation .nav-items a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    font-family: sans-serif;
+    padding: 20px;
 
-    .logo1{
-        position: relative;
-        left: 25px;
-        top: 20px;
-        cursor: pointer;
-    }
-    .tick{
-        position: relative;
-        left: 350px;
-        top: 9px;
-        margin: 0%;
-    }
-    
-    .title{
-        position: relative;
-        padding-left: 20px;
-        left: 380px;
-        top: 0px;
-        margin: 0%;
-        justify-content: center;
-        
-    }
+}
+.navigation .nav-items a:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: blue;
+    display: flex;
+    border-radius: 20%;
+    top: 25px;
+    position: relative;
+    transition: 0.6s ease-in;
+}
+.navigation .nav-items a:hover:before {
+    width: 100%;
+}
+.loginbtn{
+    width: 120px;
+    height: 55px;
+    padding: 2px;
+    border: 0;
+    margin: 0;
+    border-radius: 25px;
+    background: #FFD8DB;
+    color: #A389CC;
+    font-size: 0.8em;
+    font-weight: 600;
+} 
 
-    
 
-    .stunning-logo{
-      position: absolute;
-        width: 500px;
-        height: 500px;
-        left: 800px;
-        top: 100px;
-    }
-
-   
-
-    .user {
-        width: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        position: relative;
-        left: 220px;
-        margin: 20px 30px 0 30px;
-        background: white;
-        cursor: pointer;
-        border-radius: 10px;
-        padding: 2px 20px;
-        box-shadow: 0px 0px 5px 32px #c5c4c433;
-        margin-bottom: 50px;
-    }
-    .user-2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        align-content: space-between;
-        flex-wrap: wrap;
-    }
-    .user-list {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        align-content: center;
-        color: #c5c4c4de;
-    }
-    .user-2 .user-list .img {
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-    }
-    .user-list .para {
-        margin: 0;
-        width: 120px;
-        color: #0000009d;
-    }
-    .user-list .Date{
-        margin: 0;
-        width: 50px;
-        max-width: 50px;
-        color: #0000009d;
-    }
-    .user-list .link {
-        width: 20px;
-        height: 10px;
-        border-radius: 25px;
-        background: #000; 
-        margin-right: 10px; 
-    }
-    .user .user-2 .user-list.active {
-        background: #e7e2e2;
-        transform: scale(1,1);
-        width: 100%;
-        z-index: 888;
-        border-radius: 10px;
-        color: #000000;
-        box-shadow: 0px 0px 1px 10px  #c5c4c43b transparent;
-    }
+.section{
+    padding: 0 50px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main .content{
+    width: 50%;
+}
+.content img{
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+}
+.content .heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+}
+.content .heading h2{
+    font-size: 65px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: 40px;
+}
+.heading h2 span{
+    color: #5243C0;
+}
+.content .heading p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding-left: 0px;
+    margin-left: 40px;
+    padding-right: 81px;
+    padding-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 511px;
+    height: 70px;
+}
+.button {
+    padding: 10px 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.button button{
+    background: #5243C0;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    height: 55px;
+    padding: 2px;
+    border: 0;
+    margin: 0;
+    border-radius: 25px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.button .arrow img {
+    width: 100px;
+    height: 100px;
+}
+.arrow {
+    margin-left: 0px;
+    padding: 0;
+    width: 164;
+    height: 80;
+}
+.user {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    align-content: center;
+    margin: 20px 30px 0 30px;
+    background: #c5c4c433;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0px 0px 5px 32px #c5c4c433;
+    margin-bottom: 50px;
+}
+.user-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.user-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    color: #c5c4c4de;
+}
+.user-2 .user-list .img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.user-list .para {
+    margin: 0;
+    width: 120px;
+    color: #0000009d;
+}
+.user-list .Date{
+    margin: 0;
+    width: 50px;
+    max-width: 50px;
+    color: #0000009d;
+}
+.user-list .link {
+    width: 20px;
+    height: 10px;
+    border-radius: 25px;
+    background: #000; 
+    margin-right: 10px; 
+}
+.user .user-2 .user-list.active {
+    background: #fff;
+    transform: scale(1,1);
+    width: 100%;
+    z-index: 888;
+    border-radius: 10px;
+    color: #000000;
+    box-shadow: 0px 0px 1px 10px  #c5c4c43b transparent;
+}
