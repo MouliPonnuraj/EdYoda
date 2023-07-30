@@ -3,7 +3,7 @@ body{
     background-color: white;
     padding: 0;
 }
-
+/*----------------------------header-----------------------------------*/
 header{
     padding: 20px 100px;
     background: white;
@@ -74,7 +74,9 @@ header{
     font-size: 0.8em;
     font-weight: 600;
 } 
+/*----------------------------header-----------------------------------*/
 
+/*----------------------------Main-----------------------------------*/
 
 .section{
     padding: 0 50px;
